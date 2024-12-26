@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #857272;
+            color: #000000;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: center;
+            color: #351c4d;
+            margin-bottom: 40px;
+        }
+
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .text-content {
+            width: 48%;
+            line-height: 1.6;
+            font-size: large;
+        }
+
+        .text-content ul {
+            padding-left: 20px;
+        }
+
+        .text-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .text-content a {
+            color: #430cda;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .text-content a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-bar-section {
+            width: 48%;
+        }
+
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            flex: 1;
+            font-size: 2rem;
+        }
+
+        .skill-bar {
+            background-color: #e5e5e5;
+            height: 10px;
+            flex: 3;
+            margin: 0 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            background-color: #a855f7;
+            border-radius: 5px;
+        }
+
+        .skill-percentage {
+            flex: 0.5;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .linkedin-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0c080f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .linkedin-button:hover {
+            background-color: #7c3aed;
+        }
+        nav{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 100px;
+        width: 100vw;
+        background-color: rgb(1, 1, 44);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+a{
+    text-decoration: none;
+    color:rgb(18, 76, 184);
+}
+nav ul li a:hover{
+    font-size: 1.02rem;
+    color:lavender;
+}
+.left{
+    font-size:2rem;
+    color: #430cda;
+}
+footer{
+    background-color:#37374b;
+    width: 100vw;
+    
+    
+}
+.footer{
+    display:flex;
+    padding:23px 120px;
+    justify-content: space-evenly;
+
+}
+.footer ul{
+    list-style: none;
+    color: #7c3aed;
+}
+.footer >div{
+    width:223px;
+}
+.footer-rights{
+    color:rgb(12, 7, 7);
+    text-align: center;
+    padding: 12px 0;
+}
+
+        @media (max-width: 768px) {
+            .skills-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-content,
+            .skills-bar-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhay's Portfolio</div>
+            <div class="Right">
+                <ul>
+                    <li><a href="./index.html">Home </li></a>
+                    <li><a href="./about.html">About Me</li></a>
+                    <li><a href="./skills.html">Skills</li></a>
+                    <li><a href="./Projects.html">Projects</li></a>
+                    <li><a href="./contact.html">Contact</li></a>
+                    <li><a href="./Interest.html">My Interest</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <div class="container">
+        <h1>My Skills</h1>
+        <h2>---My Learnings---</h2>
+
+        <div class="skills-section">
+            <div class="text-content">
+                <h3>My Skills and Self Learnings</h3>
+                <p>
+                    I have acquired knowledge of Web Development through constantly updating myself with new and improved ways of doing things.
+                    Currently learning C++, Network security, and Data Structure and Algorithms.
+                    Links of some of the coding platforms I started work on:
+                </p>
+                <ul>
+                    <li><a href="https://www.hackerrank.com/profile/abhaypratapsin45">Hackerrank</a></li>
+                    <li><a href="https://leetcode.com/u/Techno_Abhay/">Leetcode</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/user/abhayprataldnj/">GeeksForGeeks</a></li>
+                </ul>
+                <a href="www.linkedin.com/in/abhay-pratap-singh-48121a318" class="linkedin-button">Go to my LinkedIn</a>
+            </div>
+
+            <div class="skills-bar-section">
+                <div class="skill">
+                    <div class="skill-name">C++</div>
+                    <div class="skill-bar"><span style="width: 75%;"></span></div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Linux</div>
+                    <div class="skill-bar"><span style="width: 55%;"></span></div>
+                    <div class="skill-percentage">55%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar"><span style="width: 70%;"></span></div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar"><span style="width: 25%;"></span></div>
+                    <div class="skill-percentage">25%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar"><span style="width: 70%;"></span></div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Abhay's Developer Portfolio</h3>
+                <p>I’m a passionate web developer, skilled in creating dynamic and user-friendly web applications. Let's collaborate and bring ideas to life!</p>
+            </div>
+            <div class="second">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                  </ul>
+
+            </div>
+            <div class="third">
+                <h4>Contact Me</h4>
+            <p>Email: <a href="Gamil:abhaypratapsingh@gmail.com">Gmail</a></p>
+            <p>Phone: 9151315514</p>
+            <p>Location: New Delhi, India</p>
+
+            </div>
+            <div class="fourth">
+                <h4>Follow Me</h4>
+                <ul>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+
+            </div>
+            <div class="fifth">
+                <h4>Connect with Me</h4>
+        <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com" target="_blank"><img src="github.png" alt="GitHub"></a>
+        <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+            </div>
+        </div>
+        <div class=" footer-rights">
+             Copyright &#169; www.abhayportfolio.com || All rights are reversed.
+        </div>
+
+     </footer>
+</body>
+</html>
